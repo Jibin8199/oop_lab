@@ -1,0 +1,14 @@
+//8.Write a program in Java to find sum and average of 5 numbers.
+
+public class Main {
+   public static void main(String[] args) {
+   float n1=23f,n2=25.2f,n3=12f,n4=-10f,n5=89f;
+   float sum=n1+n2+n3+n4+n5,avg=sum/5;
+   System.out.println("Sum is "+ sum);
+   System.out.println("Average is "+ avg);
+  }
+}
+
+OUTPUT:
+Sum is 139.2
+Average is 27.84
