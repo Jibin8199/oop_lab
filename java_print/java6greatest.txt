@@ -1,0 +1,19 @@
+//Write a Java program to print the greatest number among three numbers.
+
+public class Main {
+  public static void main(String[] args) {
+    float num1 = 22f;
+    float num2 = 44f;
+    float num3 = 33f;
+    if (num1>num2 && num1>num3) {
+      System.out.println("Largest number is "+ num1);
+    } else if (num2>num3) {
+      System.out.println("Largest number is "+ num2);
+    }  else {
+      System.out.println("Largest number is "+ num3);
+    }
+  }
+}
+
+OUTPUT:
+Largest number is 44.0
