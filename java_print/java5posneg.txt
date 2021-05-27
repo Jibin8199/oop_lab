@@ -1,0 +1,15 @@
+//5.Write a Java program to print whether a number  it is positive or negative.
+
+public class Main {
+  public static void main(String[] args) {
+    float num = -20f;
+    if (num >= 0) {
+      System.out.println(num +" is a positive number");
+    } else {
+      System.out.println(num +" is a negative number");
+    }  
+  }
+}
+
+OUTPUT:
+-20.0 is a negative number.
