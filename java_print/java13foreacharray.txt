@@ -1,0 +1,22 @@
+//13.Write java program to print array elements using for each loop.
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Array elements are:");
+    int[] num = {33,-2,45,3,78,0,12,-1};
+    for (int i : num) {
+      System.out.println(i);
+    }    
+  }
+}
+
+OUTPUT:
+Array elements are:
+33
+-2
+45
+3
+78
+0
+12
+-1
