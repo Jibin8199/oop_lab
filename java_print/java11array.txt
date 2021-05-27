@@ -1,0 +1,17 @@
+//Write a java program to access array elements,Array elements: 12,4,5,2.
+
+public class Main {
+  public static void main(String[] args) {
+    int[] num = {12,4,5,2};
+    System.out.println("First element:"+num[0]);
+    System.out.println("Second element:"+num[1]);
+    System.out.println("Third element:"+num[2]);
+    System.out.println("Fourth element:"+num[3]);
+  }
+}
+
+OUTPUT:
+First element:12
+Second element:4
+Third element:5
+Fourth element:2
