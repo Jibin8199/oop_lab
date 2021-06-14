@@ -1,0 +1,43 @@
+//Java program to print the elements of an array (using BufferedReader Class).
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class Main{
+    public static void main(String[] args)
+    throws IOException{
+        int n;
+        BufferedReader ele= new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the number of elements:");
+        n=Integer.parseInt(ele.readLine());
+        int[] arr=new int[n];
+        System.out.println("Enter elements:");
+        for(int i=0;i<n;i++){
+            arr[i]=Integer.parseInt(ele.readLine());
+        }
+        System.out.println("Array elements are:");
+        for(int i=0;i<n;i++){
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+OUTPUT:
+
+Enter the number of elements:
+5
+Enter elements:
+23
+56
+43
+12
+157
+Array elements are:
+23
+56
+43
+12
+157
+
+
+
