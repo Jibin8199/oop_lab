@@ -1,0 +1,46 @@
+//Java program to print the elements of an array in reverse order (using BufferedReader Class).
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class Main{
+    public static void main(String[] args)
+    throws IOException{
+        int n;
+        BufferedReader ele= new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter the number of elements:");
+        n=Integer.parseInt(ele.readLine());
+        int[] arr=new int[n];
+        System.out.println("Enter elements:");
+        for(int i=0;i<n;i++){
+            arr[i]=Integer.parseInt(ele.readLine());
+        }
+        System.out.println("Array elements in reverse order:");
+        for(int i=n-1;i>=0;i--){
+            System.out.println(arr[i]);
+        }
+    }
+}
+
+OUTPUT:
+
+Enter the number of elements:
+5
+Enter elements:
+23
+35
+12
+66
+113
+Array elements in reverse order:
+113
+66
+12
+35
+23
+
+
+
+
+
+
