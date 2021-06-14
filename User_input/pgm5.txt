@@ -1,0 +1,47 @@
+//Java program to print the largest element in an array.
+
+import java.util.Scanner;  
+public class Main {
+    public static void main(String[] args){
+        int n;  
+        Scanner ele=new Scanner(System.in);  
+        System.out.print("Enter the number of elements: ");  
+        n=ele.nextInt();  
+        int[] array = new int[10];  
+        System.out.println("Enter the elements of the array: "); 
+        for(int i=0; i<n; i++){
+            array[i]=ele.nextInt();
+        }  
+        System.out.println("Array elements are: ");  
+        for (int i=0; i<n; i++){
+            System.out.println(array[i]);
+        }
+        int large=array[0];
+        for(int i=1;i<n;i++){
+            if(array[i]>=large){
+                large=array[i];
+            }
+        }
+        System.out.println("Largest element in the array: "+large);
+    }  
+}
+
+OUTPUT:
+
+Enter the number of elements: 5
+Enter the elements of the array: 
+23
+10
+77
+28
+50
+Array elements are: 
+23
+10
+77
+28
+50
+Largest element in the array: 77
+
+
+
