@@ -1,0 +1,35 @@
+//1. Program to Sort strings.
+
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no: strings:");
+        int n = sc.nextInt();
+        String[] str = new String[n];
+        System.out.println("Enter strings:");
+        for(int i=0;i<n;i++){
+            str[i] = sc.next();
+        }
+        System.out.println("Sorted strings:");
+        Arrays.sort(str);
+        System.out.println(Arrays.toString(str));
+    }
+}
+
+OUTPUT:
+
+Enter no: strings:
+4
+Enter strings:
+me
+world
+sorted
+it's
+Sorted strings:
+[it's, me, sorted, world]
+
+
+
+
