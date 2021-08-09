@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Person{
+    String Name,Gender,Address;
+    int Age;
+    Person(String Name,String Gender, String Address,int Age){
+        this.Name = Name;
+        this.Gender = Gender;
+        this.Address = Address;
+        this.Age = Age;
+    }
+}
+
+class Employee extends Person{
+    String Empid,CompanyName,Qualification;
+    Double Salary;
+    Employee(String Empid,String CompanyName, String Qualification,Double salary,String Name,String Gender, String Address,int Age){
+        super(Name,Gender,Address,Age);
+        this.Empid = Empid;
+        this.CompanyName=CompanyName;
+        this.Qualification=Qualification;
+    }
+}
